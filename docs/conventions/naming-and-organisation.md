@@ -88,7 +88,7 @@ namespace PartMenuAPI.Patches
 
 Here is a boilerplate template to be used when quickly making a mod's entry point.
 
-```cs
+```csharp
 using HarmonyLib;
 using ModLoader;
 using System.Collections.Generic;
@@ -126,7 +126,7 @@ namespace MyMod
 
 ## Boilerplate (No Harmony)
 
-```cs
+```csharp
 using ModLoader;
 using System.Collections.Generic;
 using UnityEngine;

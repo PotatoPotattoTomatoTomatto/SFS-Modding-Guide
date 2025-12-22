@@ -108,7 +108,7 @@ const config: Config = {
             },
             {
               label: "Conventions and Style Guide",
-              to: "/docs/conventions/naming-and-organisation",
+              to: "/docs/category/conventions-and-style-guide/",
             },
           ],
         },
@@ -148,6 +148,7 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+      additionalLanguages: ["csharp"],
     },
   } satisfies Preset.ThemeConfig,
 };
