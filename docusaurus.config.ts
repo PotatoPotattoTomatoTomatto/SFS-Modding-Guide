@@ -90,7 +90,7 @@ const config: Config = {
         },
         { to: "/blog", label: "Blog", position: "left" },
         {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://github.com/kojamori/SFS-Modding-Guide",
           label: "GitHub",
           position: "right",
         },
@@ -112,34 +112,34 @@ const config: Config = {
           title: "Community",
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+              label: "Forums",
+              href: "https://jmnet.one/sfs/forum/index.php",
             },
             {
               label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
+              href: "https://discord.com/invite/hwfWm2d",
             },
             {
-              label: "X",
-              href: "https://x.com/docusaurus",
+              label: "Reddit",
+              href: "https://www.reddit.com/r/SpaceflightSimulator/",
             },
           ],
         },
         {
           title: "More",
           items: [
-            {
-              label: "Blog",
-              to: "/blog",
-            },
+            // {
+            //   label: "Blog",
+            //   to: "/blog",
+            // },
             {
               label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              href: "https://github.com/kojamori/SFS-Modding-Guide",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} SFS Modding Guide. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

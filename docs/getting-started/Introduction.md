@@ -6,7 +6,11 @@ Spaceflight Simulator (SFS) is a 2D, cross-platform, space flight simulation Uni
 
 The game also has an extensive planet editing feature that allows players to create and share their own custom planets and solar systems with the community.
 
-Another one of the key features of SFS is its modding support, which allows players to create and share their own custom content for the game.
+Another one of the key features of SFS is its modding support, which allows players to create and share their own custom content for the game. Mods can range from simple texture packs that change the appearance of parts, to complex gameplay mods that add new mechanics and features to the game.
+
+# Modding Platform Support
+
+As of December 22th 2025, both asset mods and code mods are supported on the desktop versions of SFS (Windows and macOS), while only asset mods are supported on the mobile versions (Android) in the beta version of SFS 1.6.
 
 # Types of Mods
 
@@ -59,5 +63,5 @@ The SFS modding community is active and supportive. If you have questions or nee
 
 ## Contributing
 
-This guide is a community-driven project, and contributions are welcome! If you have suggestions for improvements or would like to contribute content, please feel free to open a pull request on the [GitHub repository]()!
+This guide is a community-driven project, and contributions are welcome! If you have suggestions for improvements or would like to contribute content, please feel free to open a pull request on the [GitHub repository](https://github.com/kojamori/SFS-Modding-Guide)!
 By contributing to this guide, you can help make SFS modding more accessible and enjoyable for everyone.
