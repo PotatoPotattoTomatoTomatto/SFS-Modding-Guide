@@ -36,6 +36,16 @@ const config: Config = {
     locales: ["en"],
   },
 
+  headTags: [
+    {
+      tagName: "meta",
+      attributes: {
+        name: "google-site-verification",
+        content: "I3wDwZMuJdx_OvCHIL6KIW8wf6BwmkOZpx_Cci_Ol1w",
+      },
+    },
+  ],
+
   presets: [
     [
       "classic",
@@ -64,6 +74,9 @@ const config: Config = {
         // },
         theme: {
           customCss: "./src/css/custom.css",
+        },
+        gtag: {
+          trackingID: "I3wDwZMuJdx_OvCHIL6KIW8wf6BwmkOZpx_Cci_Ol1w",
         },
       } satisfies Preset.Options,
     ],
