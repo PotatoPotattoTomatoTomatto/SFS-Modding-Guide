@@ -68,6 +68,10 @@ Adopt semantic versioning (Semver) for your mod releases. This involves using a 
 - MINOR version is incremented for adding functionality in a backward-compatible manner,
 - PATCH version is incremented for backward-compatible bug fixes.
 
+:::info[Further Reading]
+For more information on semantic versioning, refer to the [Semantic Versioning 2.0.0](https://semver.org/) specification.
+:::
+
 ### Known Issues, Incompatibilities, and Limitations
 
 Document any known issues, incompatibilities with other mods, or limitations of your mod. This transparency helps users make informed decisions about using your mod and can reduce frustration if they encounter problems.
