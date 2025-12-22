@@ -39,6 +39,10 @@ Texture packs are mods that add new part textures. These can range from flat col
 
 Part packs are mods that add new parts to the game that can be used in building crafts, such as new engines, landing gear, fuel tanks, etc.
 
+## Custom Solar Systems, aka Planet Packs
+
+Custom solar systems are mods that add new planets, moons, and other celestial bodies to the game. Before 1.6.0, these were created using the in-game planet editor and shared as planet files, but with the 1.6.00.0 beta, custom solar systems are now considered mods.
+
 # This Guide
 
 This guide aims to provide a comprehensive overview of SFS modding, covering everything from setting up your development environment to creating and sharing your own mods. Whether you're a seasoned developer or a beginner looking to get started with modding, this guide will provide you with the knowledge and resources you need to create amazing mods for SFS by doing the following:
@@ -53,7 +57,7 @@ This guide aims to provide a comprehensive overview of SFS modding, covering eve
 While you don't need to be an expert programmer to create mods for SFS, a basic understanding of programming concepts and familiarity with C#, the .NET ecosystem, and the Unity Engine will be helpful. Additionally, some knowledge of game development concepts such as game loops, rendering, and physics will
 also be beneficial.
 
-For custom asset mods, you don't need programming knowledge, but familiarity with image editing software (for texture packs) and the Unity Editor (for part packs) will be useful.
+For custom asset mods, you don't need programming knowledge, but familiarity with image editing software (for texture packs and planet packs) and the Unity Editor (for part packs) will be useful.
 
 That being said, this guide will aim to explain concepts in a clear and concise manner, and provide resources for further learning where necessary.
 

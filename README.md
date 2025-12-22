@@ -1,6 +1,6 @@
 # SFS Modding Guide
 
-Welcome to the SFS Modding Guide! This guide is designed to help you get started with creating mods for Spaceflight Simulator (SFS).
+An unoffical documentation page designed to help you get started with creating mods for Spaceflight Simulator (SFS).
 
 # Docs
 
