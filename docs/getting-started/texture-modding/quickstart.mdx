@@ -1,0 +1,183 @@
+import Figure from "../../../src/components/Figure/index";
+
+# Quickstart Guide to Texture Modding
+
+<Figure
+  src="/gallery/columbinafumo.png"
+  caption="Courtesy of Columbina"
+  alt="Spaceflight Simulator rocket with custom textures applied, featuring plushies: Cirno, Reimu Hakurei, Patchouli Knowledge, and Cirno in a bottle. Showcasing modded textures for SFS parts."
+  widthpercent="30"
+></Figure>
+
+So you saw this cool rocket with custom textures and you want to make your own? This quickstart guide will walk you through the basics of creating and applying texture mods in Spaceflight Simulator (SFS).
+This guide is for both PC (and mobile users, in the 1.6.00.0 beta). Note that for mobile users, you need the expansions and the beta version of SFS 1.6 to use texture mods.
+
+## Step 1: Set Up Your Mod Folder
+
+First, you'll need to create a mod folder where you'll store your texture files.
+
+1. Navigate to the SFS mods directory. On PC, this is usually located at:
+   ```
+   C:\Users\<YourUsername>\Program Files (x86)\Steam\steamapps\common\Spaceflight Simulator\Spaceflight Simulator Game\Mods
+   ```
+   On Android, it's typically found in the SFS installation directory under `Mods`.
+   ```
+   /storage/emulated/0/Android/media/com.StefMorojna.SpaceflightSimulator/Mods
+   ```
+2. Find the `Texture Packs` folder in `Mods/Custom Assets`.
+
+<Figure
+  src="/gallery/mods-folderPC.png"
+  caption="Mods Folder Structure (PC, Courtesy of Koja Mori)"
+  alt="Screenshot showing the Mods folder structure in Spaceflight Simulator, highlighting the Custom Assets and Texture Packs folders."
+  widthpercent="50"
+></Figure>
+
+3. Clone the `Example` folder and rename it to your desired mod name, e.g., `My First Texture Mod`.
+4. Inside your new mod folder, you'll find 4 main subfolders and a file called pack_info.txt
+   - `Color Textures`: This is the folder you will primarily work with.
+   - `Shape Textures`: More advanced users can modify shape textures here.
+   - `Shadow Textures`: Used for shape texture shadows.
+   - `Textures`: The image files go here.
+
+Clear out all of these folders to start fresh, except for the `pack_info.txt` file.  
+ You can edit this file to give your mod a name, description, author information, version number, and an icon.
+
+## Step 2: Create Your Textures
+
+The most basic texture modding involves replacing the color textures of SFS parts.
+This quickstart guide will focus on single textured color textures only. There are many options available but we will keep it simple for now.
+
+1. Open the `Textures` folder. Here, you'll find image files representing the textures of various SFS parts.
+
+- These can be JPG or PNG files, but it's best to use PNG for better quality and transparency support.
+
+2. Create your own texture images using an image editing software like Photoshop, GIMP, or Paint.NET.
+   - It's recommended to keep textures at a maximum resolution of 1024x1024 pixels for optimal quality and performance.
+3. Name your texture files according to the part they will be applied to. For example, if you're creating a texture for the "Basic Rocket Body", name it `basic_rocket_body.png`.
+4. Place your newly created image files into the `Textures` folder of your mod.
+
+<Figure
+  src="/gallery/texture_files.png"
+  caption="Texture Files in the Textures Folder (Courtesy of Koja Mori)"
+  alt="Screenshot showing a custom texture PNG file placed in the Textures folder of a Spaceflight Simulator texture mod."
+  widthpercent="95"
+></Figure>
+
+## Step 3: Adding the texture entry
+
+Next, you need to inform SFS about your new textures by adding a texture entry in the `Color Textures` folder.
+
+Create a new file titled `<your_texture_entry_name>.txt`, and modify everything in angle brackets (`<like_this>`) to fit your texture mod:
+
+```json
+{
+  "colorTex": {
+    "textures": [
+      {
+        "texture": "<your_texture_name>.<png/jpg, depending on your file format>",
+        "ideal": 0.0
+      }
+    ],
+    "border_Bottom": {
+      "uvSize": 0.0,
+      "sizeMode": 0,
+      "size": 0.5
+    },
+    "border_Top": {
+      "uvSize": 0.0,
+      "sizeMode": 0,
+      "size": 0.5
+    },
+    "center": {
+      "mode": 1,
+      "sizeMode": 0,
+      "size": 0.5,
+      "logoHeightPercent": 0.5,
+      "scaleLogoToFit": false
+    },
+    "fixedWidth": false,
+    "fixedWidthValue": 1,
+    "flipToLight_X": false,
+    "flipToLight_Y": false,
+    "metalTexture": false,
+    "icon": null
+  },
+  "tags": ["tank", "cone", "fairing"],
+  "pack_Redstone_Atlas": false,
+  "multiple": false,
+  "segments": [],
+  "name": "<your_texture_entry_name>",
+  "hideFlags": 0
+}
+```
+
+- Replace `<your_texture_entry_name>` with a name for your texture entry file, e.g., `my_first_texture_entry.txt`.
+  - This is also the in-game identifier for your color texture. Use it when blueprint editing, eg. `"color_tex": "my_first_texture_entry"`.
+- Replace `<your_texture_name>` with the name of your texture PNG file, e.g., `basic_rocket_body.png`.
+- Replace `<A unique name for your texture entry. Keep it short and simple.>` with a unique name for your texture entry, e.g., `customcolor1`, etc.
+
+## Step 4: `pack_info.txt` Configuration
+
+Finally, make sure your `pack_info.txt` file is properly configured to include your texture mod.
+
+Here is an example of how your `pack_info.txt` file might look:
+
+```json
+{
+  "DisplayName": "My First Texture Mod",
+  "Version": "1.0",
+  "Description": "A simple texture mod for Spaceflight Simulator.",
+  "Author": "Koja Mori",
+  "ShowIcon": false,
+  "Icon": null,
+  "name": "",
+  "hideFlags": 0
+}
+```
+
+## Step 5: Enable Your Texture Mod in SFS
+
+Now that you've created your texture mod, it's time to enable it in Spaceflight Simulator.
+
+1. Launch Spaceflight Simulator.
+2. Go to the Mods menu from the main screen.
+3. Find your texture mod in the list and enable it by checking the box next to its name.
+4. Start a new game or load an existing one to see your custom textures applied to the parts.
+
+<Figure
+  src="/gallery/texturemodingame.png"
+  caption="Texture Mod in Mod Menu (Courtesy of Koja Mori)"
+  alt="Screenshot showing the Mods menu in Spaceflight Simulator with a texture mod enabled."
+  widthpercent="70"
+></Figure>
+<Figure
+  src="/gallery/applyingtexturemenu.png"
+  caption="Colour Texture Menu (Courtesy of Koja Mori)"
+  alt="Screenshot of a Spaceflight Simulator rocket in-game showcasing custom textures applied to a part."
+  widthpercent="70"
+></Figure>
+<Figure
+  src="/gallery/texturemodrocket.png"
+  caption="Custom Textured Rocket (Courtesy of Koja Mori)"
+  alt="Screenshot of a Spaceflight Simulator rocket in-game showcasing custom textures applied to a part."
+  widthpercent="70"
+></Figure>
+
+# P.S.
+
+Note that textures can have transparency, so you can create parts with see-through sections if desired.
+You won't be able to see other parts behind transparent sections, but you would be able to see through to space or the ground.
+
+Also note that texture mods only apply to parts that use color textures. Parts that can't be textured include engines, struts, and landing legs, etc.
+If you apply a color texture to a part with a different resolution/size ratio, the texture may appear stretched or squashed.
+
+<Figure
+  src="/gallery/stretchedtexture.png"
+  caption="Stretched Texture Example (Courtesy of Koja Mori)"
+  alt="Screenshot showing a Spaceflight Simulator rocket part with a custom texture that includes transparent sections."
+  widthpercent="50"
+></Figure>
+
+Feel free to experiment with different textures and settings to create unique looks for your rockets! For more advanced texture modding, consider exploring shape textures and shadow textures as well.
+These will hopefully be covered in future guides. Happy modding!
