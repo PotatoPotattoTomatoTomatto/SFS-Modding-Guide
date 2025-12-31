@@ -1,8 +1,0 @@
-{
-  "label": "StatsMenu",
-  "position": 2,
-  "link": {
-    "type": "generated-index",
-    "description": "A class that provides a number of methods to create UI for a stats menu."
-  }
-}
